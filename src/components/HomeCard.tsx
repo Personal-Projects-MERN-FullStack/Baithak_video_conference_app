@@ -9,7 +9,7 @@ interface HomeCardProps{
     handleClick: ()=>void
 }
 const HomeCard = ({img,className,title,description,handleClick}:HomeCardProps) => {
-  console.log(img)
+  
   return (
     <section
     className={cn(
