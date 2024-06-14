@@ -18,7 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <ClerkProvider>
+      <ClerkProvider 
+      appearance={{
+        layout: {
+          socialButtonsVariant: "iconButton",
+          logoImageUrl: "/icons/yoom-logo.svg",
+        },
+      }}
+      >
         <body className={`${inter.className} bg-dark-2`}>{children}</body>
       </ClerkProvider>
     </html>
