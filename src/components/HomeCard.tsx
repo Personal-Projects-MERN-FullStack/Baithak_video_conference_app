@@ -9,6 +9,7 @@ interface HomeCardProps{
     handleClick: ()=>void
 }
 const HomeCard = ({img,className,title,description,handleClick}:HomeCardProps) => {
+  console.log(img)
   return (
     <section
     className={cn(
@@ -18,7 +19,8 @@ const HomeCard = ({img,className,title,description,handleClick}:HomeCardProps) =
     onClick={handleClick}
   >
     <div className="flex-center glassmorphism size-12 rounded-[10px]">
-      <Image src={img} alt="meeting" width={27} height={27} />
+    <Image src={String(img)} alt="meeting" width={27} height={27} />
+
     </div>
     
     <div className="flex flex-col gap-2">
