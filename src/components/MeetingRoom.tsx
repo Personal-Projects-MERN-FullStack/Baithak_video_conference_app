@@ -67,7 +67,7 @@ const MeetingRoom = () => {
             <div key={index}>
               <DropdownMenuItem
                 onClick={() =>
-                  setLayout(item.toLowerCase() as CallLayoutType)
+                  setLayout(item.toLowerCase() as callLayoutType)
                 }
               >
                 {item}
