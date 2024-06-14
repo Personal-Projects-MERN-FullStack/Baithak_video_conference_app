@@ -3,7 +3,7 @@ import { DeviceSettings, VideoPreview, useCall } from '@stream-io/video-react-sd
 import React, { useEffect, useState } from 'react'
 import { Button } from './ui/button'
 
-const MeetingSetup = ({setisSetupComplete} : {setisSetupComplete:(boolean)=>void}) => {
+const MeetingSetup = ({setisSetupComplete} : {setisSetupComplete:(arg0: boolean)=>void}) => {
     const [isMicCarmToggledOn, setisMicCarmToggledOn] = useState(false)
     const call = useCall()
     if(!call){
