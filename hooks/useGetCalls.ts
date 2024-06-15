@@ -47,7 +47,7 @@ export const useGetCalls = () => {
 
 
   const upcomingCalls = calls?.filter(({ state: { startsAt } }: Call) => {
-    console.log(startsAt )
+   
     return startsAt && new Date(startsAt) > now
   })
   console.log(upcomingCalls)
